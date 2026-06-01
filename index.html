@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>钢丝绳在线检测系统 · 下载</title>
+  <style>
+    :root {
+      --bg: #0a1220;
+      --surface: #151c27;
+      --accent: #00b4d8;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --border: #1e3a5f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Microsoft YaHei UI", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      max-width: 520px;
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 40px 36px;
+      text-align: center;
+    }
+    .logo {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #0d2818, #1e3a5f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: var(--accent);
+    }
+    h1 { font-size: 1.5rem; margin: 0 0 8px; color: var(--accent); }
+    .version { color: var(--muted); margin-bottom: 24px; font-size: 0.95rem; }
+    .req { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #3b82f6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #2563eb; }
+    .steps {
+      text-align: left;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .steps strong { color: var(--text); display: block; margin-bottom: 8px; }
+    .changelog { margin-top: 20px; font-size: 0.85rem; color: var(--muted); text-align: left; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">⛓</div>
+    <h1>钢丝绳在线检测系统</h1>
+    <p class="version">版本 5.0.250704</p>
+    <p class="req">系统要求：Windows 10 / 11（64 位）</p>
+    <a class="btn" href="https://github.com/dushengyao/mg4-release/releases/download/v5.0.250704/mg4Setup-5.0.250704-x64.exe">
+      下载 Windows 版
+    </a>
+    <div class="steps">
+      <strong>安装说明</strong>
+      1. 下载并运行安装程序<br/>
+      2. 选择安装范围（本机 / 所有用户）<br/>
+      3. 输入启动密码进入系统<br/>
+      4. 下位机通讯默认密码 1234、端口 9005（可在软件内「通讯设置」修改）<br/>
+      <a href="用户使用手册.md" style="color:var(--accent);margin-top:12px;display:inline-block;">📖 用户使用手册</a>
+    </div>
+    <div class="changelog">
+      <strong style="color:var(--text);">更新日志</strong><br/>
+      v5.0.250704 — 产品化界面、自包含安装包、检伤结果查看优化。
+    </div>
+  </div>
+</body>
+</html>
