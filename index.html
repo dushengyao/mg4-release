@@ -26,7 +26,7 @@
       padding: 24px;
     }
     .card {
-      max-width: 520px;
+      max-width: 560px;
       width: 100%;
       background: var(--surface);
       border: 1px solid var(--border);
@@ -61,6 +61,19 @@
       transition: background 0.2s;
     }
     .btn:hover { background: #2563eb; }
+    .btn-secondary {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 24px;
+      background: transparent;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    .btn-secondary:hover { border-color: var(--accent); }
+    .filename { color: var(--muted); font-size: 0.85rem; margin-top: 12px; }
     .steps {
       text-align: left;
       margin-top: 32px;
@@ -72,28 +85,38 @@
     }
     .steps strong { color: var(--text); display: block; margin-bottom: 8px; }
     .changelog { margin-top: 20px; font-size: 0.85rem; color: var(--muted); text-align: left; }
+    .changelog ul { margin: 8px 0 0; padding-left: 1.2em; }
   </style>
 </head>
 <body>
   <div class="card">
     <div class="logo">⛓</div>
     <h1>钢丝绳在线检测系统</h1>
-    <p class="version">版本 5.0.250704</p>
-    <p class="req">系统要求：Windows 10 / 11（64 位）</p>
-    <a class="btn" href="https://github.com/dushengyao/mg4-release/releases/download/v5.0.250704/mg4Setup-5.0.250704-x64.exe">
-      下载 Windows 版
+    <p class="version">版本 5.0.250706</p>
+    <p class="req">系统要求：Windows 10 / 11（64 位）· 安装向导：简体中文</p>
+    <a class="btn" href="https://github.com/dushengyao/mg4-release/releases/download/v5.0.250706/mg4Setup-5.0.250706-x64.exe">
+      下载 Windows 安装包（中文向导）
+    </a>
+    <p class="filename">安装包：mg4Setup-5.0.250706-x64.exe</p>
+    <a class="btn-secondary" href="用户使用手册.md" download="钢丝绳在线检测系统-用户使用手册-V5.0.250706.md">
+      下载用户使用手册
     </a>
     <div class="steps">
       <strong>安装说明</strong>
-      1. 下载并运行安装程序<br/>
-      2. 选择安装范围（本机 / 所有用户）<br/>
-      3. 输入启动密码进入系统<br/>
-      4. 下位机通讯默认密码 1234、端口 9005（可在软件内「通讯设置」修改）<br/>
-      <a href="用户使用手册.md" style="color:var(--accent);margin-top:12px;display:inline-block;">📖 用户使用手册</a>
+      1. 下载并双击安装程序（全程中文向导）<br/>
+      2. 可选「创建桌面快捷方式」<br/>
+      3. 安装完成后从开始菜单或桌面启动<br/>
+      4. 输入启动密码；首次联机确认通讯密码（默认 1234）与端口（9005）
     </div>
     <div class="changelog">
-      <strong style="color:var(--text);">更新日志</strong><br/>
-      v5.0.250704 — 产品化界面、自包含安装包、检伤结果查看优化。
+      <strong style="color:var(--text);">V5.0.250706 更新</strong>
+      <ul>
+        <li>连接状态与 TCP 同步，断线不再「假连接」</li>
+        <li>断线时启动检测不再崩溃</li>
+        <li>MRT 单绳配置；报警记录写入 Wire 检伤（C 级及以上）</li>
+        <li>报告曲线刻度修正，损伤顶部倒三角标记</li>
+        <li>中文 Inno Setup 安装向导</li>
+      </ul>
     </div>
   </div>
 </body>
